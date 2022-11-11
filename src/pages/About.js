@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import pdf from '../Media/MyResume.pdf'
 import rohan from '../Media/rohan.jpg'
+import web1 from '../Media/iframe1.jpg'
+import web2 from '../Media/iframe2.jpg'
 import '../css/about.css'
 import { useEffect } from 'react'
 import {FaInstagram,FaDownload,FaCalendarAlt } from 'react-icons/fa'
@@ -228,20 +230,25 @@ const About = () => {
           </li>
           <br />
         </div>
-
-
-
-        <div>
+    </div>
+    <div>
+        </div>
+    <br />
+    <br />
           <h2>MY OTHER WORKS</h2>
           <br/>
-          <div className="frame">
-            <a href="https://rohantestapp.netlify.app/" rel='noopener noreferrer' target='_blank' className='other' id='frame1'> </a>
-            <a href="https://rohantestapp2.netlify.app/" rel='noopener noreferrer' target='_blank' className='other' id='frame2'> </a>
+          <div className="work">
+            <a href="https://rohantestapp.netlify.app/" rel='noopener noreferrer' target='_blank' className='other' id='frame1'>
+              <img src={web2} alt="testapp1" />
+            </a>
+            <a href="https://rohantestapp2.netlify.app/" rel='noopener noreferrer' target='_blank' className='other' id='frame2'>
+              <img src={web1} alt="testapp1" />
+            </a>
           </div>
-        </div>
+          <br />
+          <br />
+          .
       </div>
-    
-    </div>
   </div>
   </>
   )
