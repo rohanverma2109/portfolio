@@ -138,14 +138,14 @@ const About = () => {
         <div className="skill">
             <h2>React Js</h2>
           <div className='tipcont react'>
-            <div className="tip" >40%</div>
+            <div className="tip" >60%</div>
           </div>
           <div className="bar"><div className="percent react"></div></div>
         </div>
         <div className="skill">
             <h2>Javascript</h2>
           <div className='tipcont javascript'>
-            <div className="tip" data-id='70%'>50%</div>
+            <div className="tip" data-id='70%'>80%</div>
           </div>
           <div className="bar"><div className="percent javascript"></div></div>
         </div>
@@ -159,35 +159,35 @@ const About = () => {
         <div className="skill">
             <h2>MySql</h2>
           <div className='tipcont mysql'>
-            <div className="tip">60%</div>
+            <div className="tip">75%</div>
           </div>
           <div className="bar"><div className="percent mysql"></div></div>
         </div>
         <div className="skill">
             <h2>Jquery</h2>
           <div className='tipcont jquery'>
-            <div className="tip">60%</div>
+            <div className="tip">70%</div>
           </div>
           <div className="bar"><div className="percent jquery"></div></div>
         </div>
         <div className="skill">
             <h2>AJAX</h2>
           <div className='tipcont ajax'>
-            <div className="tip">60%</div>
+            <div className="tip">80%</div>
           </div>
           <div className="bar"><div className="percent ajax"></div></div>
         </div>
         <div className="skill">
             <h2>HTML</h2>
           <div className='tipcont html'>
-            <div className="tip">70%</div>
+            <div className="tip">80%</div>
           </div>
           <div className="bar"><div className="percent html"></div></div>
         </div>
         <div className="skill">
             <h2>CSS</h2>
           <div className='tipcont css'>
-            <div className="tip">60%</div>
+            <div className="tip">80%</div>
           </div>
           <div className="bar"><div className="percent css"></div></div>
         </div>
@@ -196,6 +196,19 @@ const About = () => {
       <br />
       <br />
       <div className='mydata final'>
+
+      <div className='map'>
+        {(()=>{
+          if(map==='college'){
+            return <iframe title='college' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.2743989459386!2d76.71128479054815!3d30.738792893234347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee1574407563%3A0x2f930474d4af78d2!2sGovernment%20College%20Mohali!5e0!3m2!1sen!2sin!4v1667919808455!5m2!1sen!2sin"></iframe>
+          }else if(map==='twelve'){
+            return <iframe title='sr school' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.8497556185976!2d76.76407601446047!3d30.6945030945265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fec6839b5f8f7%3A0x4a63654a5c82f6e2!2sGovernment%20Model%20Senior%20Secondary%20School!5e0!3m2!1sen!2sin!4v1667919987003!5m2!1sen!2sin"></iframe>
+          }else if(map==='ten'){
+            return <iframe title='high school' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.9621259875594!2d76.72380931446041!3d30.691341694678673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee9890bc6ced%3A0x970ffe0cf334ac67!2sStar%20Public%20School!5e0!3m2!1sen!2sin!4v1667916630216!5m2!1sen!2sin"></iframe>
+          }
+        })()}
+        </div>
+
         <div className="edu">
           <h2>EDUCATION</h2>
           <br />
@@ -216,17 +229,7 @@ const About = () => {
           <br />
         </div>
 
-        <div className='map'>
-        {(()=>{
-          if(map==='college'){
-            return <iframe title='college' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.2743989459386!2d76.71128479054815!3d30.738792893234347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee1574407563%3A0x2f930474d4af78d2!2sGovernment%20College%20Mohali!5e0!3m2!1sen!2sin!4v1667919808455!5m2!1sen!2sin"></iframe>
-          }else if(map==='twelve'){
-            return <iframe title='sr school' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.8497556185976!2d76.76407601446047!3d30.6945030945265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fec6839b5f8f7%3A0x4a63654a5c82f6e2!2sGovernment%20Model%20Senior%20Secondary%20School!5e0!3m2!1sen!2sin!4v1667919987003!5m2!1sen!2sin"></iframe>
-          }else if(map==='ten'){
-            return <iframe title='high school' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.9621259875594!2d76.72380931446041!3d30.691341694678673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee9890bc6ced%3A0x970ffe0cf334ac67!2sStar%20Public%20School!5e0!3m2!1sen!2sin!4v1667916630216!5m2!1sen!2sin"></iframe>
-          }
-        })()}
-        </div>
+
 
         <div>
           <h2>MY OTHER WORKS</h2>

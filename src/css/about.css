@@ -156,12 +156,17 @@ align-items: center;
 .apage h2{
   font-size: xx-large;
 }
+.final{
+  display: flex;
+  justify-content: center;
+}
 .final div{
   margin: 1%;
   width: 80%;
   height: 100%;
   max-width: 380px;
   text-align: left;
+ 
 }
 .edu{
   list-style: none;
@@ -240,28 +245,28 @@ align-items: center;
   background-color: var(--color);
 }
 .react{
-  width: 40%;
+  width: 60%;
 }
 .javascript{
-  width: 50%;
+  width: 80%;
 }
 .php{
   width: 65%;
 }
 .mysql{
-  width: 60%;
+  width: 75%;
 }
 .jquery{
-  width: 60%;
-}
-.ajax{
-  width: 60%;
-}
-.html{
   width: 70%;
 }
+.ajax{
+  width: 80%;
+}
+.html{
+  width: 80%;
+}
 .css{
-  width: 60%;
+  width: 80%;
 }
 
 
