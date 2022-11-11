@@ -1,0 +1,283 @@
+.overlay{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+.nav{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    padding: 1.2px;
+    top:10px;
+    left:8px;
+    z-index: 2;
+    border-radius: 50px;
+    background-color: #363c3e;
+}
+
+#clicklbl{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    padding: 1.2px;
+    top:10px;
+    left:8px;
+    z-index: 3;
+    border-radius: 50px;
+}
+.checked{
+    justify-content: flex-start;
+    align-items: flex-start;
+    animation: hgt .1s linear forwards;
+}
+
+.menu{
+        cursor: pointer;
+        position: absolute;
+        top: 12px;
+        left: 16px;
+        width: 100%;
+        border-radius: 50%;
+}
+.ham{
+    width: 28px;
+    height: 30px;
+    cursor: pointer;
+}
+.ham img{
+    height: 100%;
+    width: 18px;
+    object-fit: contain;
+}
+.ham svg{
+    height: 100%;
+    width: 18px;
+    object-fit: contain;
+    margin-right: 4.5px;
+}
+.navlinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #ffffff;
+    width: 0%;
+    height: 0%;
+    opacity: 0%;
+    top: 0px;
+    z-index: -1;
+    left: 13px;
+    position:absolute;
+}
+.checkedlink{
+    animation: bot .2s .1s linear forwards;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    height: 35px;
+    position: absolute;
+    cursor: pointer;
+}
+.link:hover{
+    color: var(--color);
+}
+.link *{
+    padding: 2.7px;
+   
+}
+.linkanim{
+    animation: secondlinkanim .2s  linear forwards;
+}
+.link3anim{
+    animation: thirdlinkanim .2s  linear forwards;
+}
+.link h1{
+    font-size: 100%;
+    padding: 2% 8%;
+    border-radius: 10px;
+    background-color: #363c3e80;
+}
+.active{
+    width: 1.2px;
+    height: 25px;
+}
+.activate{
+    background-color: var(--color);
+}
+.hide{
+    display: none;
+}
+
+.page{
+    position: absolute;
+    transform: translateX(-100%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.animated{
+    z-index: 100;
+    animation: pagetransition .5s ease-out forwards;
+}
+.sel{
+    color: var(--color);
+}
+
+
+
+.swapper{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    padding: 1.2px;
+    bottom:100px!important;
+    right: 0 !important;;
+    z-index: 2;
+    border-radius: 5px;
+    background-color: #363c3e;
+}
+#swap{
+    position: fixed;
+    z-index: 2;
+    bottom: 108px;
+    right: 10.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#swap img{
+    width: 22px!important;
+}
+.hide{
+    display: none;
+}
+.round{
+    
+    animation: rotate 3.5s linear infinite;
+}
+.clrbox{
+    right: 0 !important;
+    bottom: 0 !important;
+    position: fixed;
+    height: 100px;
+    width: 201px;
+    background-color: #363c3e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+    z-index: 2;
+    border-radius: 20px 0px 0px 0px;
+}
+.piece{
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+
+.navpro{
+    background-color: #340c0f!important;
+}
+#white{
+    background-color: #eb821b;
+}
+#red{
+    background-color: red;
+}
+#pink{
+    background-color: brown;
+}
+#purple{
+    background-color: purple;
+}
+#yellow{
+    background-color: yellowgreen;
+}
+#green{
+    background-color: green;
+}
+#neon{
+    background-color: lightseagreen;
+}
+#blue{
+    background-color: blue;
+}
+
+
+@keyframes hgt{
+    0%{
+        height: 60px;
+    }
+    25%{
+        height: 90px;
+    }
+    75%{
+        height: 130px;
+    }
+    100%{
+        height: 198px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@keyframes bot{
+    0%{
+        top: 15px;
+        height: 20%;
+        width: 20%;
+        opacity: 20%;
+    }
+    50%{
+        top: 30px;
+        width: 50%;
+        height: 50%;
+        opacity: 50%;
+    }
+    100%{
+        top: 50px;
+        width: 100%;
+        height: 100%;
+        opacity: 100%;
+    }
+}
+@keyframes secondlinkanim{
+    0%{
+        top: 20px;
+    }
+    100%{
+        top: 50px;
+    }
+}
+@keyframes thirdlinkanim{
+    0%{
+        top: 20px;
+    }
+    100%{
+        top: 100px;
+    }
+}
