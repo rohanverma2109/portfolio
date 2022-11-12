@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "../css/Home.css"
 const Home = () => {
   const [text, setText] = useState("")
-const write=['ROHAN VERMA','A REACT JS DEVELOPER'];
+const [write]=useState(['ROHAN VERMA','A REACT JS DEVELOPER']);
 const [fullText,setfulltext] = useState(write[0])
 const [index, setIndex] = useState(0)
   window.onbeforeunload=()=>{
@@ -67,7 +67,7 @@ const [index, setIndex] = useState(0)
         setfulltext(write[0])
       },1000)
     }
-  }, [index,text,fullText])
+  }, [index,text,fullText,write])
   useEffect(()=>{
     document.querySelector('body').style.setProperty('--color', '#eb821b');
     window.addEventListener('scroll',()=>{
