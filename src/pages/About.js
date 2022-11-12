@@ -59,7 +59,7 @@ const About = () => {
               
               <div className="frame">
                 <div className="con">
-                  <a href="https://www.instagram.com/_verma_rohan_/" rel='noopener noreferrer' target='_blank' className='btn hbtn1'><FaInstagram/>&nbsp;&nbsp;follow</a>
+                  <a href="https://www.instagram.com/_verma_rohan_/" rel='noopener noreferrer' target='_blank' className='btn hbtn1'><FaInstagram/>&nbsp;&nbsp;Follow</a>
                 </div>
                 <div className="con">
                   <a download='MyResume.pdf' href={link} className='btn hbtn2'><FaDownload/>&nbsp;Download CV</a>
@@ -80,11 +80,11 @@ const About = () => {
           <ul>
             <li>
               <BsCircle className='crl'/>
-             <h3>REACT ROUTER<br /><span>Basic Knowledge of using React router</span></h3><br />
+             <h3>REACT ROUTER<br /><span>Basic Knowledge of using React router and route change animations</span></h3><br />
             </li>
             <li>
               <BsCircle className='crl'/>
-              <h3>AXIOS<br /><span>Using Axios get, post, put, delete requests to fetch data from api</span></h3><br />
+              <h3>AXIOS<br /><span>Using Axios get, post, put, delete requests to fetch data from rest api</span></h3><br />
             </li>
             <li>
               <BsCircle className='crl'/>
@@ -92,8 +92,21 @@ const About = () => {
             </li>
             <li>
               <BsCircle className='crl'/>
-              <h3>SCROLL CONTROLLED ANIMATIONS<br /><span>Animations progress based on scrollbar position</span></h3><br />
+              <h3>CRUD IN REACT<br /><span>Basic CRUD application in React Js using PHP and MySql database</span></h3><br />
             </li>
+            <li>
+              <BsCircle className='crl'/>
+              <h3>LOGIN/ SIGNUP IN REACT<br /><span>Login/ Signup form in React js with PHP api and Mysql database</span></h3><br />
+            </li>
+            <li>
+              <BsCircle className='crl'/>
+              <h3>SINGLE PAGE APPLICATIONS<br /><span>Basic understanding of creating a  Single page application in React Js</span></h3><br />
+            </li>
+            
+            
+          </ul>
+
+          <ul>
             <li>
               <BsCircle className='crl'/>
               <h3>EMBED MAP<br /><span>Using Google Maps Api to embed map and add custom marker on it in javascript</span></h3><br />
@@ -102,25 +115,11 @@ const About = () => {
               <BsCircle className='crl'/>
               <h3>FETCH NEAREST LOCATIONS<br /><span>Fetch nearest locations from current location using google Api in javascript</span></h3><br />
             </li>
-          </ul>
-
-          <ul>
             <li>
               <BsCircle className='crl'/>
-              <h3>DESIGN FROM PSD/FIGMA<br /><span>Create and animate designs inspired from Photoshop and Figma</span></h3><br />
+              <h3>SCROLL CONTROLLED ANIMATIONS<br /><span>Animations progress based on scrollbar position</span></h3><br />
             </li>
-            <li>
-              <BsCircle className='crl'/>
-              <h3>CRUD IN PHP<br /><span>Basic CRUD application using MySql database in PHP</span></h3><br />
-            </li>
-            <li>
-              <BsCircle className='crl'/>
-              <h3>LOGIN/ SIGNUP IN PHP<br /><span>Basic Login/ Signup Form using PHP and MySql database</span></h3><br />
-            </li>
-            <li>
-              <BsCircle className='crl'/>
-              <h3>LOGIN/ SIGNUP IN REACT<br /><span>Login/ Signup form in React js with PHP api and Mysql database</span></h3><br />
-            </li>
+            
             <li>
               <BsCircle className='crl'/>
               <h3>CREATING A PHP API<br /><span>Creating a basic Api using PHP and MySql for get, post, put and delete requests</span></h3><br />
@@ -129,12 +128,17 @@ const About = () => {
               <BsCircle className='crl'/>
               <h3>SHOPPING CART IN PHP<br /><span>Creating a basic model of shopping cart in PHP</span></h3><br />
             </li>
+            <li>
+              <BsCircle className='crl'/>
+              <h3>DESIGN FROM PSD/FIGMA<br /><span>Create and animate designs inspired from Photoshop and Figma</span></h3><br />
+            </li>
           </ul>
         </div>
       </div>
       <br />
       <br />
       <h2>SKILLS</h2>
+      <br />
       <br />
       <div className="skills">
         <div className="skill">
@@ -200,6 +204,8 @@ const About = () => {
       <br />
       <br />
       <h2>EDUCATION</h2>
+
+      <br />
       <div className='mydata final'>
 
       <div className='map'>
@@ -238,6 +244,7 @@ const About = () => {
     <br />
     <br />
           <h2>MY OTHER WORKS</h2>
+          <br/>
           <br/>
           <div className="work">
             <a href="https://rohantestapp.netlify.app/" rel='noopener noreferrer' target='_blank' className='other' id='frame1'>
