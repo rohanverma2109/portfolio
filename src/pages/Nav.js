@@ -153,8 +153,8 @@ const Nav = () => {
                 </div>
             </div>
             <div className='navlinks' ref={navlinks}>
-                <div onClick={theclick} id='home' className='link' data-page="/home"><div className='ham'><FaHome/></div><div className="active" id='hbar'></div><h1>Home</h1></div>
-                <div onClick={theclick} id='about' className='link' data-page="/about"><div className='ham'><FaUser/> </div><div className="active" id='abar'></div><h1>About</h1></div>
+                <div onClick={theclick} id='home' className='link' data-page="/home"><div className='ham'><FaHome/></div><div className="active" id='hbar'></div>&nbsp;<h1>Home</h1></div>
+                <div onClick={theclick} id='about' className='link' data-page="/about"><div className='ham'><FaUser/></div><div className="active" id='abar'></div>&nbsp;<h1>About</h1></div>
                 <div onClick={theclick} id='portfolio' className='link' data-page="/portfolio"><div className='ham'><FaBriefcase /></div><div className="active" id='pbar'></div><h1>Products</h1></div>
             </div>
         </div>

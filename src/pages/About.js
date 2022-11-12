@@ -47,7 +47,7 @@ const About = () => {
                   <h6><span>First Name </span>Rohan</h6>
                   <h6><span>Last Name </span>Kumar</h6>
                   <h6><span>Age </span>21</h6>
-                  <h6><span>Email </span>rohanverma2109@gmail.com</h6>
+                  <h6 id='mail'><span>Email </span>rohanverma2109@gmail.com</h6>
                 </div>
                 <div>
                   <h6><span>Phone </span>+91 9056742109</h6>
