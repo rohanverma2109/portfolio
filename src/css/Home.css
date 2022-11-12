@@ -109,7 +109,7 @@ h1 span{
 }
 .hbtn2:hover{
     color: aliceblue;
-    box-shadow: inset 16rem 0 0 0 var(--color);
+    box-shadow: inset 17rem 0 0 0 var(--color);
 }
 
 .typer{
