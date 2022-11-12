@@ -51,21 +51,21 @@ const [index, setIndex] = useState(0)
       setTimeout(() => {
         setText(text + fullText[index])
         setIndex(index + 1)
-      }, 150)
+      }, 100)
     }
     if(fullText===write[0]&& index===11){
       setTimeout(()=>{
         setText('')
         setIndex(0)
         setfulltext(write[1])
-      },500)
+      },1000)
     }
     if(fullText===write[1]&& index===20){
       setTimeout(()=>{
         setText('')
         setIndex(0)
         setfulltext(write[0])
-      },500)
+      },1000)
     }
   }, [index,text,fullText])
   useEffect(()=>{
