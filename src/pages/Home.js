@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import "../css/Home.css"
 const Home = () => {
   const [text, setText] = useState("")
-const [fullText, ] = useState("ROHAN VERMA")
+const write=['ROHAN VERMA','A REACT JS DEVELOPER'];
+const [fullText,setfulltext] = useState(write[0])
 const [index, setIndex] = useState(0)
-
   window.onbeforeunload=()=>{
     window.scrollTo(0,0);
   }
@@ -53,10 +53,18 @@ const [index, setIndex] = useState(0)
         setIndex(index + 1)
       }, 150)
     }
-    if(index===11){
+    if(fullText===write[0]&& index===11){
       setTimeout(()=>{
         setText('')
         setIndex(0)
+        setfulltext(write[1])
+      },500)
+    }
+    if(fullText===write[1]&& index===20){
+      setTimeout(()=>{
+        setText('')
+        setIndex(0)
+        setfulltext(write[0])
       },500)
     }
   }, [index,text,fullText])
