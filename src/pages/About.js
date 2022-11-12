@@ -47,7 +47,7 @@ const About = () => {
                   <h6><span>First Name </span>Rohan</h6>
                   <h6><span>Last Name </span>Kumar</h6>
                   <h6><span>Age </span>21</h6>
-                  <h6 id='mail'><span>Email </span>rohanverma2109@gmail.com</h6>
+                  <h6 id='mail'><span>Email </span>verma.rohan1231@gmail.com</h6>
                 </div>
                 <div>
                   <h6><span>Phone </span>+91 9056742109</h6>
@@ -134,8 +134,8 @@ const About = () => {
       </div>
       <br />
       <br />
-      <h1>Skills</h1>
-      <br /><br />
+      <h2>Skills</h2>
+      <br />
       <div className="skills">
         <div className="skill">
             <h2>React Js</h2>
@@ -168,21 +168,21 @@ const About = () => {
         <div className="skill">
             <h2>Jquery</h2>
           <div className='tipcont jquery'>
-            <div className="tip">70%</div>
+            <div className="tip">80%</div>
           </div>
           <div className="bar"><div className="percent jquery"></div></div>
         </div>
         <div className="skill">
             <h2>AJAX</h2>
           <div className='tipcont ajax'>
-            <div className="tip">80%</div>
+            <div className="tip">90%</div>
           </div>
           <div className="bar"><div className="percent ajax"></div></div>
         </div>
         <div className="skill">
             <h2>HTML</h2>
           <div className='tipcont html'>
-            <div className="tip">80%</div>
+            <div className="tip">90%</div>
           </div>
           <div className="bar"><div className="percent html"></div></div>
         </div>
@@ -197,6 +197,9 @@ const About = () => {
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <h2>EDUCATION</h2>
       <div className='mydata final'>
 
       <div className='map'>
@@ -212,7 +215,6 @@ const About = () => {
         </div>
 
         <div className="edu">
-          <h2>EDUCATION</h2>
           <br />
           <li data-id='college' onClick={lomap} className={(()=>{if(map==='college'){return 'seloc'}else{return ''}})()}>
             <h4><span><FaCalendarAlt/> 2018-2021</span> - Bachelor of Arts</h4>

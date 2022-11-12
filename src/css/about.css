@@ -105,7 +105,7 @@ align-items: center;
 .btn{
   display: flex;
   flex-direction: row;
-  padding: 1% 5%;
+  padding: 3% 5%;
   background-color: var(--color);
   border-radius: 25px;
   transition: .5s;
@@ -249,13 +249,13 @@ align-items: center;
   width: 75%;
 }
 .jquery{
-  width: 70%;
+  width: 80%;
 }
 .ajax{
-  width: 80%;
+  width: 90%;
 }
 .html{
-  width: 80%;
+  width: 90%;
 }
 .css{
   width: 80%;
@@ -301,6 +301,17 @@ align-items: center;
 }
 #mail{
   word-wrap: break-word;
+}
+.edu li h4 {
+	margin-bottom: 14px;
+}
+.skill {
+    margin-top: 40px;
+}
+
+.mydata.final{
+    margin-top: 50px;
+    margin-bottom: 75px;
 }
 @media only screen and (max-width: 1100px) {
   .apage h1{
