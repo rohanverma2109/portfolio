@@ -8,6 +8,7 @@ import Portfolio from "./pages/Portfolio";
 
 function App() {
   useEffect(()=>{
+    document.body.style.overflow = "hidden";
     setTimeout(()=>{
       document.body.style.overflow = "visible";
     },4000)

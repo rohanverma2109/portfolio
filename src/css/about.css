@@ -133,6 +133,7 @@ align-items: center;
   text-align: left;
   list-style: none;
   border-left: 2px solid var(--color);
+  width: 100%;
 }
 .concepts ul li{
   min-height: 110px;

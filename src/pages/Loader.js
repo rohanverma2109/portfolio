@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "../css/loader.css"
 const Loader = () => {
     window.scrollTo(0,0)
-    document.body.style.overflow = "hidden";
+    
     var [data,setdata]=useState(()=>{
         return(
             <div className='loader'>
@@ -19,6 +19,7 @@ const Loader = () => {
         )
     });
     useEffect(()=>{
+        
         setTimeout(()=>{
             setdata(()=>{
                 document.body.style.overflow = "visible";
