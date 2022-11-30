@@ -4,6 +4,8 @@ import pdf from '../Media/MyResume.pdf'
 import rohan from '../Media/rohan.jpg'
 import web1 from '../Media/iframe1.jpg'
 import web2 from '../Media/iframe2.jpg'
+import web3 from '../Media/iframe3.png'
+import web4 from '../Media/iframe4.png'
 import '../css/about.css'
 import { useEffect } from 'react'
 import {FaInstagram,FaDownload,FaCalendarAlt } from 'react-icons/fa'
@@ -35,7 +37,7 @@ const About = () => {
         <p>I CODE AND DESIGN AMAZING THINGS, AND I LOVE WHAT I DO.</p>
         <div className='mydata'>
           <div className="myimage">
-            <img className='rohanimg' src={rohan} title="Rohan Verma" alt="Rohan Verma" />
+            <img className='rohanimg' src={rohan} title="Rohan Kumar" alt="Rohan Verma" />
           </div>
           <div className="info">
             <div className="biodata mydata">
@@ -53,7 +55,9 @@ const About = () => {
                   <h6><span>Phone </span>+91 9056742109</h6>
                   <h6><span>D.O.B. </span>06 Sep 2001</h6>
                   <h6><span>Address </span>SAS Nagar Mohali</h6>
-                  <h6><span>Github </span>@rohanverma2109</h6>
+                  <a href="https://github.com/rohanverma2109" rel='noopener noreferrer' target='_blank' className='txtlink'>
+                    <h6><span>Github </span>@rohanverma2109</h6>
+                  </a>
                 </div>
               </div>
               
@@ -239,23 +243,28 @@ const About = () => {
           <br />
         </div>
     </div>
-    <div>
-        </div>
+    
     <br />
     <br />
           <h2>MY OTHER WORKS</h2>
           <br/>
           <br/>
           <div className="work">
-            <a href="https://rohantestapp.netlify.app/" rel='noopener noreferrer' target='_blank' className='other' id='frame1'>
+            <a href="https://rohanportfolio003.000webhostapp.com/" rel='noopener noreferrer' target='_blank' className='other' id='frame1'>
+              <img src={web3} alt="testapp1" />
+            </a>
+            <a href="https://rohantestapp.netlify.app/" rel='noopener noreferrer' target='_blank' className='other' id='frame2'>
               <img src={web2} alt="testapp1" />
             </a>
-            <a href="https://rohantestapp2.netlify.app/" rel='noopener noreferrer' target='_blank' className='other' id='frame2'>
+          </div>
+          <div className="work">
+            <a href="https://rohantestapp2.netlify.app/" rel='noopener noreferrer' target='_blank' className='other' id='frame1'>
               <img src={web1} alt="testapp1" />
             </a>
+            <a href="https://testportfolio001.000webhostapp.com/" rel='noopener noreferrer' target='_blank' className='other' id='frame2'>
+              <img src={web4} alt="testapp1" />
+            </a>
           </div>
-          <br />
-          <br />
           .
       </div>
   </div>

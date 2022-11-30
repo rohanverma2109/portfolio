@@ -33,6 +33,11 @@
   justify-content: center;
   text-align: left;
 }
+#list a{
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+}
 #list *{
   margin: 1%;
   width: 100%;
@@ -284,6 +289,8 @@ align-items: center;
   text-decoration: none;
   align-items: center;
   color:var(--color);
+  box-shadow:  5px 5px 10px  #ededed,
+             -5px -5px 10px #ffffff;
 }
 .other:hover{
   scale: 1.1;
@@ -293,6 +300,7 @@ align-items: center;
   object-fit: cover;
   width: 100%;
   height: 100%;
+  
 }
 
 .seloc{
@@ -343,10 +351,12 @@ align-items: center;
   }
   .work{
     flex-direction: column;
+    margin: 0;
   }
   .work *{
     width: 100%;
     height: 100%;
+    
   }
   
   .edu{
