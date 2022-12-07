@@ -27,7 +27,7 @@ const About = () => {
              setlink(fileURL);
             })
         })
-  })
+  },[])
   return (
   <>
   <div className="about">
