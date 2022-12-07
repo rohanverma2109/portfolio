@@ -203,8 +203,6 @@ align-items: center;
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-end;
-  box-shadow:  5px 5px 10px #ededed,
-             -5px -5px 10px #ffffff;
 }
 .tip{
   position: relative;
@@ -240,6 +238,9 @@ align-items: center;
 }
 .percent{
   background-color: var(--color);
+}
+#owh2{
+  margin-top: 2%;
 }
 .react{
   width: 60%;
@@ -316,10 +317,19 @@ align-items: center;
 .skill {
     margin-top: 4%;
 }
-
+.data{
+  z-index: 1;
+}
+#eduh2{
+  margin-top: 4%;
+}
 .mydata.final{
     margin-top: 50px;
-    margin-bottom: 75px;
+}
+@media only screen and (max-width: 725px) {
+  #eduh2{
+    margin-top: 20%!important;
+  }
 }
 @media only screen and (max-width: 1100px) {
   .apage h1{

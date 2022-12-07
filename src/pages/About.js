@@ -11,7 +11,10 @@ import { useEffect } from 'react'
 import {FaInstagram,FaDownload,FaCalendarAlt } from 'react-icons/fa'
 import { BsCircle } from 'react-icons/bs'
 import { SlLocationPin } from 'react-icons/sl'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 const About = () => {
+  
   var [link,setlink]=useState(null);
   var [map,setmap]=useState('college');
   var lomap=(e)=>{
@@ -21,6 +24,7 @@ const About = () => {
     window.scrollTo(0,0);
   }
   useEffect(()=>{
+    AOS.init();
     fetch(pdf).then(response => {
             response.blob().then(blob => {
              const fileURL = window.URL.createObjectURL(blob);
@@ -33,7 +37,7 @@ const About = () => {
   <div className="about">
     <div className="apage">
     <br />
-        <h1>About Me.</h1>
+        <h1 >About Me.</h1>
         <p>I CODE AND DESIGN AMAZING THINGS, AND I LOVE WHAT I DO.</p>
         <div className='mydata'>
           <div className="myimage">
@@ -76,33 +80,33 @@ const About = () => {
           <br />
           <br />
           <br />
-          <h2>CONCEPTS COVERED</h2>
+          <h2 data-aos="zoom-in-up">CONCEPTS COVERED</h2>
           <br />
           <br />
-      <div className='mydata'>
-        <div className="mydata concepts">
+      <div className='mydata' data-aos="zoom-in-up">
+        <div className="mydata concepts" >
           <ul>
-            <li>
+            <li data-aos="zoom-in-up">
               <BsCircle className='crl'/>
              <h3>REACT ROUTER<br /><span>Basic Knowledge of using React router and route change animations</span></h3><br />
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <BsCircle className='crl'/>
               <h3>AXIOS<br /><span>Using Axios get, post, put, delete requests to fetch data from rest api</span></h3><br />
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <BsCircle className='crl'/>
               <h3>BASIC HOOKS CONCEPTS<br /><span>Basic understanding of using React useState, useEffect, useRef hooks</span></h3><br />
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <BsCircle className='crl'/>
               <h3>CRUD IN REACT<br /><span>Basic CRUD application in React Js using PHP and MySql database</span></h3><br />
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <BsCircle className='crl'/>
               <h3>LOGIN/ SIGNUP IN REACT<br /><span>Login/ Signup form in React js with PHP api and Mysql database</span></h3><br />
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <BsCircle className='crl'/>
               <h3>SINGLE PAGE APPLICATIONS<br /><span>Basic understanding of creating a  Single page application in React Js</span></h3><br />
             </li>
@@ -111,28 +115,28 @@ const About = () => {
           </ul>
 
           <ul>
-            <li>
+            <li data-aos="zoom-in-up">
               <BsCircle className='crl'/>
               <h3>EMBED MAP<br /><span>Using Google Maps Api to embed map and add custom marker on it in javascript</span></h3><br />
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <BsCircle className='crl'/>
               <h3>FETCH NEAREST LOCATIONS<br /><span>Fetch nearest locations from current location using google Api in javascript</span></h3><br />
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <BsCircle className='crl'/>
               <h3>SCROLL CONTROLLED ANIMATIONS<br /><span>Animations progress based on scrollbar position</span></h3><br />
             </li>
             
-            <li>
+            <li data-aos="zoom-in-up">
               <BsCircle className='crl'/>
               <h3>CREATING A PHP API<br /><span>Creating a basic Api using PHP and MySql for get, post, put and delete requests</span></h3><br />
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <BsCircle className='crl'/>
               <h3>SHOPPING CART IN PHP<br /><span>Creating a basic model of shopping cart in PHP</span></h3><br />
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <BsCircle className='crl'/>
               <h3>DESIGN FROM PSD/FIGMA<br /><span>Create and animate designs inspired from Photoshop and Figma</span></h3><br />
             </li>
@@ -141,60 +145,60 @@ const About = () => {
       </div>
       <br />
       <br />
-      <h2>SKILLS</h2>
+      <h2 data-aos="zoom-in-up" data-aos-anchor-placement="top">SKILLS</h2>
       <br />
       <br />
       <div className="skills">
-        <div className="skill">
+        <div className="skill" data-aos="zoom-in-up">
             <h2>React Js</h2>
           <div className='tipcont react'>
             <div className="tip" >60%</div>
           </div>
           <div className="bar"><div className="percent react"></div></div>
         </div>
-        <div className="skill">
+        <div className="skill" data-aos="zoom-in-up">
             <h2>Javascript</h2>
           <div className='tipcont javascript'>
             <div className="tip" data-id='70%'>80%</div>
           </div>
           <div className="bar"><div className="percent javascript"></div></div>
         </div>
-        <div className="skill">
+        <div className="skill" data-aos="zoom-in-up">
             <h2>PHP</h2>
           <div className='tipcont php'>
             <div className="tip">65%</div>
           </div>
           <div className="bar"><div className="percent php"></div></div>
         </div>
-        <div className="skill">
+        <div className="skill" data-aos="zoom-in-up">
             <h2>MySql</h2>
           <div className='tipcont mysql'>
             <div className="tip">75%</div>
           </div>
           <div className="bar"><div className="percent mysql"></div></div>
         </div>
-        <div className="skill">
+        <div className="skill" data-aos="zoom-in-up">
             <h2>Jquery</h2>
           <div className='tipcont jquery'>
             <div className="tip">80%</div>
           </div>
           <div className="bar"><div className="percent jquery"></div></div>
         </div>
-        <div className="skill">
+        <div className="skill" data-aos="zoom-in-up">
             <h2>AJAX</h2>
           <div className='tipcont ajax'>
             <div className="tip">90%</div>
           </div>
           <div className="bar"><div className="percent ajax"></div></div>
         </div>
-        <div className="skill">
+        <div className="skill" data-aos="zoom-in-up">
             <h2>HTML</h2>
           <div className='tipcont html'>
             <div className="tip">90%</div>
           </div>
           <div className="bar"><div className="percent html"></div></div>
         </div>
-        <div className="skill">
+        <div className="skill" data-aos="zoom-in-up">
             <h2>CSS</h2>
           <div className='tipcont css'>
             <div className="tip">80%</div>
@@ -204,10 +208,7 @@ const About = () => {
       </div>
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <h2>EDUCATION</h2>
+      <h2 data-aos="zoom-in-up" data-aos-anchor-placement="top" id='eduh2'>EDUCATION</h2>
 
       <br />
       <div className='mydata final'>
@@ -215,16 +216,16 @@ const About = () => {
       <div className='map'>
         {(()=>{
           if(map==='college'){
-            return <iframe title='college' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.2743989459386!2d76.71128479054815!3d30.738792893234347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee1574407563%3A0x2f930474d4af78d2!2sGovernment%20College%20Mohali!5e0!3m2!1sen!2sin!4v1667919808455!5m2!1sen!2sin"></iframe>
+            return <iframe title='college' data-aos="zoom-in-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.2743989459386!2d76.71128479054815!3d30.738792893234347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee1574407563%3A0x2f930474d4af78d2!2sGovernment%20College%20Mohali!5e0!3m2!1sen!2sin!4v1667919808455!5m2!1sen!2sin"></iframe>
           }else if(map==='twelve'){
-            return <iframe title='sr school' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.8497556185976!2d76.76407601446047!3d30.6945030945265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fec6839b5f8f7%3A0x4a63654a5c82f6e2!2sGovernment%20Model%20Senior%20Secondary%20School!5e0!3m2!1sen!2sin!4v1667919987003!5m2!1sen!2sin"></iframe>
+            return <iframe title='sr school' data-aos="zoom-in-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.8497556185976!2d76.76407601446047!3d30.6945030945265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fec6839b5f8f7%3A0x4a63654a5c82f6e2!2sGovernment%20Model%20Senior%20Secondary%20School!5e0!3m2!1sen!2sin!4v1667919987003!5m2!1sen!2sin"></iframe>
           }else if(map==='ten'){
-            return <iframe title='high school' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.9621259875594!2d76.72380931446041!3d30.691341694678673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee9890bc6ced%3A0x970ffe0cf334ac67!2sStar%20Public%20School!5e0!3m2!1sen!2sin!4v1667916630216!5m2!1sen!2sin"></iframe>
+            return <iframe title='high school' data-aos="zoom-in-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.9621259875594!2d76.72380931446041!3d30.691341694678673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee9890bc6ced%3A0x970ffe0cf334ac67!2sStar%20Public%20School!5e0!3m2!1sen!2sin!4v1667916630216!5m2!1sen!2sin"></iframe>
           }
         })()}
         </div>
 
-        <div className="edu">
+        <div className="edu" data-aos="zoom-in-up">
           <br />
           <li data-id='college' onClick={lomap} className={(()=>{if(map==='college'){return 'seloc'}else{return ''}})()}>
             <h4><span><FaCalendarAlt/> 2018-2021</span> - Bachelor of Arts</h4>
@@ -246,22 +247,22 @@ const About = () => {
     
     <br />
     <br />
-          <h2>MY OTHER WORKS</h2>
+          <h2 data-aos="zoom-in-up" id='owh2'>MY OTHER WORKS</h2>
           <br/>
           <br/>
-          <div className="work">
-            <a href="https://rohanportfolio003.000webhostapp.com/" rel='noopener noreferrer' target='_blank' className='other' id='frame1'>
+          <div className="work" >
+            <a href="https://rohanportfolio003.000webhostapp.com/" data-aos="zoom-in-up" rel='noopener noreferrer' target='_blank' className='other' id='frame1'>
               <img src={web3} alt="testapp1" />
             </a>
-            <a href="https://rohantestapp.netlify.app/" rel='noopener noreferrer' target='_blank' className='other' id='frame2'>
+            <a href="https://rohantestapp.netlify.app/" data-aos="zoom-in-up" rel='noopener noreferrer' target='_blank' className='other' id='frame2'>
               <img src={web2} alt="testapp1" />
             </a>
           </div>
           <div className="work">
-            <a href="https://rohantestapp2.netlify.app/" rel='noopener noreferrer' target='_blank' className='other' id='frame1'>
+            <a href="https://rohantestapp2.netlify.app/" data-aos="zoom-in-up" rel='noopener noreferrer' target='_blank' className='other' id='frame1'>
               <img src={web1} alt="testapp1" />
             </a>
-            <a href="https://testportfolio001.000webhostapp.com/" rel='noopener noreferrer' target='_blank' className='other' id='frame2'>
+            <a href="https://testportfolio001.000webhostapp.com/" data-aos="zoom-in-up" rel='noopener noreferrer' target='_blank' className='other' id='frame2'>
               <img src={web4} alt="testapp1" />
             </a>
           </div>

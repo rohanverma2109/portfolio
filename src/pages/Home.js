@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom';
 import "../css/Home.css"
+import AOS from 'aos'
 const Home = () => {
-  const [text, setText] = useState("")
+const [text, setText] = useState("");
 const [write]=useState(['ROHAN VERMA','A REACT JS DEVELOPER']);
 const [fullText,setfulltext] = useState(write[0])
 const [index, setIndex] = useState(0)
@@ -82,7 +83,6 @@ const [index, setIndex] = useState(0)
       nth8.current.style.transform = `translate3d(0,-${window.scrollY/16.28}%,0)`;
     }
     })
-
   },[])
   return (
 <>
