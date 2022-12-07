@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom';
 import "../css/Home.css"
-import AOS from 'aos'
 const Home = () => {
 const [text, setText] = useState("");
 const [write]=useState(['ROHAN VERMA','A REACT JS DEVELOPER']);
